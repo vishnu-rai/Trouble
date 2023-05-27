@@ -6,7 +6,7 @@ import "./AboutUs.css";
 const AboutUs = () => (
   <div className="about-page" id="about">
     <div className="about-box">
-      <div className="xyz">
+      <div className="text-container">
         <div className="about-heading">
           <p>ABOUT US</p>
         </div>
@@ -20,10 +20,31 @@ const AboutUs = () => (
           </p>
         </div>
       </div>
-      <div className="imgcon">
-        <img className="about-image"
-          src={images.gallery02}
-        />
+      <div className="image-container">
+        <img className="about-image" src={images.img4} />
+      </div>
+    </div>
+    <div className="stat-contaiiner">
+      <div className="stat-count">
+        <img className="stat-icon" src={images.mealIcon} />
+        <p className="stat-text">
+          500+
+          <br /> Order Placed
+        </p>
+      </div>
+      <div className="stat-count">
+        <img className="stat-icon" src={images.customerIcon} />
+        <p className="stat-text">
+          100+
+          <br /> Customer joined
+        </p>
+      </div>
+      <div className="stat-count">
+        <img className="stat-icon" src={images.starIcon} />
+        <p className="stat-text">
+          50+
+          <br /> Five Star reviews
+        </p>
       </div>
     </div>
   </div>
