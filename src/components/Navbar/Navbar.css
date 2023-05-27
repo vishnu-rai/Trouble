@@ -8,6 +8,12 @@
   perspective: 1000px;
   transform-style: preserve-3d;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #4a7f9c;
 }
 
 .navbar-container {
@@ -28,6 +34,13 @@
   font-weight: bold;
   text-decoration: none;
   color: #4a7f9c;
+  letter-spacing: 2px;
+}
+
+.brand-name-scrolled {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
   letter-spacing: 2px;
 }
 
@@ -56,6 +69,10 @@
   margin-left: 50px;
   font-size: 30px;
   transition: transform 0.3s, color 0.3s;
+}
+
+.navbar-item-scrolled {
+  color: #ffffff;
 }
 
 .navbar-link:hover {

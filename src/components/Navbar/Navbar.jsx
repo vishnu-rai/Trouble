@@ -7,6 +7,27 @@ import images from "../../constants/images";
 import "./Navbar.css";
 
 const Navbar = () => {
+  window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".navbar");
+    var navbarItems = document.querySelectorAll(".navbar-link");
+    var brandName = document.querySelector(".brand-name");
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrolled > 0) {
+      navbar.classList.add("navbar-scrolled");
+      brandName.classList.add("brand-name-scrolled");
+      navbarItems.forEach(function (item) {
+        item.classList.add("navbar-item-scrolled");
+      });
+    } else {
+      navbar.classList.remove("navbar-scrolled");
+      brandName.classList.remove("brand-name-scrolled");
+      navbarItems.forEach(function (item) {
+        item.classList.remove("navbar-item-scrolled");
+      });
+    }
+  });
+
   return (
     <nav class="navbar">
       <div class="navbar-container">
@@ -38,12 +59,12 @@ const Navbar = () => {
             </a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#contact">
+            <a class="navbar-link" href="#findUs">
               Find Us
             </a>
           </li>
           <li class="navbar-item" style={{ marginLeft: "100px" }}>
-            <a class="navbar-link" href="#login">
+            <a class="navbar-link" href="#contact">
               Contact Us
             </a>
           </li>
