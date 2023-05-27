@@ -2,10 +2,10 @@ import bg from "../assets/bg.png";
 import Backend from "../assets/Backend.png";
 import chef from "../assets/chef.png";
 import G from "../assets/G.png";
-import gallery01 from "../assets/gallery01.png";
-import gallery02 from "../assets/gallery02.png";
-import gallery03 from "../assets/gallery03.png";
-import gallery04 from "../assets/gallery04.png";
+// import gallery01 from "../assets/gallery01.png";
+// import gallery02 from "../assets/gallery02.png";
+// import gallery03 from "../assets/gallery03.png";
+// import gallery04 from "../assets/gallery04.png";
 import knife from "../assets/knife.png";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.png";
@@ -24,8 +24,8 @@ import gericht from "../assets/gericht.png";
 import bubble from "../assets/airbuble.jpeg";
 import navbar_bg from "../assets/navbar_bg.png";
 import tempheader from "../assets/tempheader.jpeg";
-import history_img from "../assets/history_img.jpg"
-import img1 from "../assets/img1.jpg"
+import history_img from "../assets/history_img.jpg";
+import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.jpg";
 import img4 from "../assets/img4.jpg";
@@ -33,6 +33,9 @@ import img5 from "../assets/img5.png";
 import img6 from "../assets/img6.jpg";
 import img7 from "../assets/img7.jpg";
 import img8 from "../assets/img8.jpg";
+import mealIcon from "../assets/meals_icon.png";
+import customerIcon from "../assets/customer_icon.png";
+import starIcon from "../assets/star_icon.png";
 
 export default {
   bg,
@@ -47,10 +50,10 @@ export default {
   history_img,
   chef,
   G,
-  gallery01,
-  gallery02,
-  gallery03,
-  gallery04,
+  // gallery01,
+  // gallery02,
+  // gallery03,
+  // gallery04,
   knife,
   logo,
   menu,
@@ -70,4 +73,7 @@ export default {
   bubble,
   navbar_bg,
   tempheader,
+  mealIcon,
+  customerIcon,
+  starIcon,
 };
