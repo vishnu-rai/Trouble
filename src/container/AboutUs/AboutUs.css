@@ -1,4 +1,4 @@
-.app__aboutus {
+/* .app__aboutus {
   position: relative;
 }
 
@@ -83,4 +83,42 @@
     width: 80%;
     height: 320px;
   }
+} */
+
+.about-page {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  background-color: #4a7f9c;
+}
+
+.about-box {
+  display: flex;
+  height: 500px;
+}
+
+.about-heading {
+  flex: 1;
+  font-size: 100px;
+  text-shadow: 2px 2px 4px;
+  color: #f4e64c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.about-heading p {
+  margin-top: 80px;
+  margin-left: 100px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.about-content{
+  width: 1200px;
+}
+.about-content p {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 200px;
+
 }
