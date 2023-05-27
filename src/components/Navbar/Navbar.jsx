@@ -38,37 +38,37 @@ const Navbar = () => {
           <img src={images.gericht} alt="Logo" class="brand-logo" />
         </div>
         <ul class="navbar-items">
-          <li class="navbar-item">
+          <li>
             <a class="navbar-link" href="#home">
               Home
             </a>
           </li>
-          <li class="navbar-item">
+          <li>
             <a class="navbar-link" href="#about">
               Who Are We
             </a>
           </li>
-          <li class="navbar-item">
+          <li>
             <a class="navbar-link" href="#menu">
               Our Speciality
             </a>
           </li>
-          <li class="navbar-item">
+          <li>
             <a class="navbar-link" href="#award">
               Be a Careless
             </a>
           </li>
-          <li class="navbar-item">
+          <li>
             <a class="navbar-link" href="#findUs">
               Find Us
             </a>
           </li>
-          <li class="navbar-item" style={{ marginLeft: "100px" }}>
-            <a class="navbar-link" href="#contact">
-              Contact Us
-            </a>
-          </li>
         </ul>
+        <div>
+          <a class="navbar-link" href="#contact">
+            Contact Us
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -10,6 +10,7 @@
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
   position: fixed;
   transition: background-color 0.3s ease;
+  padding: 0 1rem;
 }
 
 .navbar-scrolled {
@@ -18,23 +19,23 @@
 
 .navbar-container {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
 }
 
 .navbar-brand {
   font-weight: bold;
-  margin-left: 50px;
-  font-size: 45px;
   display: flex;
   align-items: center;
+  padding-left: 2rem;
 }
 
 .brand-name {
   font-weight: bold;
   text-decoration: none;
   color: #4a7f9c;
-  letter-spacing: 2px;
+  font-size: 45px;
+  letter-spacing: 0.2rem;
 }
 
 .brand-name-scrolled {
@@ -54,20 +55,15 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  padding: 0;
-  margin-left: 200px;
-}
-
-.navbar-item {
-  margin-left: 10px;
-  font-weight: bold;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .navbar-link {
   text-decoration: none;
   color: #4a7f9c;
-  margin-left: 50px;
-  font-size: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
   transition: transform 0.3s, color 0.3s;
 }
 
