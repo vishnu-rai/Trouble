@@ -1,6 +1,4 @@
 import React from "react";
-
-import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Header.css";
 
@@ -11,12 +9,10 @@ const Header = () => (
       backgroundImage: `url(${images.tempheader})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
+      width:"100%",
       height: "100vh",
-      width: "99vw",
     }}
-  >
-  </div>
+  ></div>
 );
-
 
 export default Header;
