@@ -16,16 +16,16 @@ import "./App.css";
 
 const App = () => (
   <div style={{ backgroundColor: "white" }}>
-    <Navbar />  
+    <Navbar />
     <Header />
     <AboutUs />
-     {/* <SpecialMenu /> */}
+    {/* <SpecialMenu /> */}
     {/* <Chef /> */}
     {/* <Intro />
     <Laurels />
     <Gallery />
     <FindUs />
-    <Footer /> */} 
+    <Footer /> */}
   </div>
 );
 

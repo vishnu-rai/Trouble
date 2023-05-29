@@ -1,0 +1,16 @@
+.swiper-slide {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-height: 400px;
+}
+
+.carousel-item-content {
+  margin-top: 20px;
+}

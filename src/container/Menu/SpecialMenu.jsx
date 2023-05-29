@@ -1,66 +1,61 @@
-import React from 'react';
+import React, { Component, useState } from "react";
+import Carousel from "react-spring-3d-carousel";
+import { config } from "react-spring";
+import { v4 as uuidv4 } from "uuid";
+import specials from "../../constants/data";
+import "./SpecialMenu.css";
+// import CarouselCom from "../Carousel/Carousel";
 
-import { SubHeading, MenuItem } from '../../components';
-import { data, images } from '../../constants';
-import './SpecialMenu.css';
- 
-const SpecialMenu = () => (
-  <div className="app__specialMenu flex__center section__padding" id="menu">
-    <div className="app__specialMenu-title">
-      <SubHeading title="Menu that fits your palatte" />
-      <h1 className="headtext__cormorant" style={{ color: "#f4e64c" }}>
-        Today&apos;s Special
-      </h1>
-    </div>
-
-    <div className="app__specialMenu-menu">
-      <div className="app__specialMenu-menu_wine  flex__center">
-        <p
-          className="app__specialMenu-menu_heading"
-          style={{ color: "#f4e64c" }}
+const SpecialMenu = () => {
+  const [goToSlide, setGoToSlide] = useState(0);
+  const [ offsetRadius, setOffsetRadius ] = useState( 2 );
+  
+  const handleLeftArrowClick = () => {
+    setGoToSlide(goToSlide - 1);
+  };
+  const handleRightArrowClick = () => {
+    setGoToSlide(goToSlide + 1);
+  };
+  
+  return (
+    <div className="menus-page" id="menu">
+      <h2 className="specials-heading">Our Specials</h2>
+      <div className=".corousel-container">
+        <Carousel
+          slides={specials.map((item) => ({
+            key: uuidv4(),
+            content: (
+              <div style={{ textAlign: "center" }}>
+                <img
+                  src={item.photo}
+                  alt={item.name}
+                  style={{ width: "100%", maxHeight: "400px" }}
+                />
+                <h3 style={{ marginTop: "1rem", fontSize: "3rem" }}>
+                  {item.name}
+                </h3>
+                <p style={{ fontSize: "2rem" }}>{item.description}</p>
+              </div>
+            ),
+          }))}
+          goToSlide={goToSlide}
+          offsetRadius={offsetRadius}
+          animationConfig={config}
+        />
+        <div
+          style={{
+            width: "50%",
+            display: "flex",
+            justifyContent: "space-around",
+          }}
         >
-          Wine & Beer
-        </p>
-        <div className="app__specialMenu_menu_items">
-          {data.wines.map((wine, index) => (
-            <MenuItem
-              key={wine.title + index}
-              title={wine.title}
-              price={wine.price}
-              tags={wine.tags}
-            />
-          ))}
+          <button onClick={handleLeftArrowClick}>Left Arrow</button>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <button onClick={handleRightArrowClick}>Right Arrow</button>
         </div>
       </div>
-
-      <div className="app__specialMenu-menu_img">
-        <img src={images.menu} alt="menu__img" />
-      </div>
-
-      <div className="app__specialMenu-menu_cocktails  flex__center">
-        <p
-          className="app__specialMenu-menu_heading"
-          style={{ color: "#f4e64c" }}
-        >
-          Cocktails
-        </p>
-        <div className="app__specialMenu_menu_items">
-          {data.cocktails.map((cocktail, index) => (
-            <MenuItem
-              key={cocktail.title + index}
-              title={cocktail.title}
-              price={cocktail.price}
-              tags={cocktail.tags}
-            />
-          ))}
-        </div>
-      </div>
     </div>
-
-    {/* <div style={{ marginTop: 15 }}>
-      <button type="button" className="custom__button">View More</button>
-    </div> */}
-  </div>
-);
+  );
+};
 
 export default SpecialMenu;
