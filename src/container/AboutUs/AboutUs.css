@@ -1,6 +1,8 @@
 .about-page {
   height: 100vh;
-  padding-top: 5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #4a7f9c;
   background: linear-gradient(to right, #4a7f9c, #f4ec8c);
 }
@@ -8,9 +10,9 @@
   display: flex;
   justify-content: left;
   padding-left: 4rem;
-  padding-top: 5rem;
   padding-right: 1rem;
-  height: 50%;
+  padding-top: 8rem;
+  height: 60%;
 }
 .text-container {
   flex: 7;
@@ -46,7 +48,7 @@
   max-width: 100%;
 }
 .stat-contaiiner {
-  height: 50%;
+  height: 40%;
   padding: 5rem 10rem;
   display: flex;
   justify-content: space-between;
@@ -65,4 +67,5 @@
   font-size: 2rem;
   text-align: center;
   color: black;
+  height: 40%;
 }
