@@ -4,16 +4,59 @@
   padding-top: 8rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .specials-heading {
+  height: 20%;
   text-align: left;
   letter-spacing: 2px;
   font-size: 80px;
-  text-shadow: 2px 2px 4px;
-  color: #f4e64c;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f4e64c;
 }
-.corousel-container{
 
+.corousel-container {
+  height: 80%;
+  padding: 2rem;
+  position: relative;
+}
+
+.carousel-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-buttons button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+.carousel-buttons button.left {
+  background-image: url("../../assets/leftArrow.png"); /* Replace with the path to your left arrow image */
+  background-repeat: no-repeat;
+  background-size: 80% auto; /* Adjust the size as needed */
+}
+
+.carousel-buttons button.right {
+  background-image: url("../../assets/rightArrow.png"); /* Replace with the path to your right arrow image */
+  background-repeat: no-repeat;
+  background-size: 70% auto; /* Adjust the size as needed */
 }

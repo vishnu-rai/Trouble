@@ -19,7 +19,7 @@ const App = () => (
     <Navbar />
     <Header />
     <AboutUs />
-    {/* <SpecialMenu /> */}
+    <SpecialMenu />
     {/* <Chef /> */}
     {/* <Intro />
     <Laurels />
